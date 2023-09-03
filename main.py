@@ -1,7 +1,5 @@
-f = open('text.txt', 'r')
-print(*f)
-f.close()
+with open('text.txt', 'r') as f:
+    print(f.read())
 
-f = open('secretcode.txt', 'r')
-print("Your code is: %s" % f.read())
-f.close
+with open('secretcode.txt', 'r') as f:
+    print("Your code is: %s" % f.read())
